@@ -79,16 +79,25 @@ class _HomePageState extends State<HomePage> {
               decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  color.AppColor.gradientFirst,
-                  color.AppColor.gradientSecond
-                ]
+                  color.AppColor.gradientFirst.withOpacity(0.8),
+                  color.AppColor.gradientSecond.withOpacity(0.9)
+                ],
+                begin: Alignment.bottomLeft,
+                end: Alignment.centerRight
               ),
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(10),
                     bottomLeft: Radius.circular(10),
                     bottomRight: Radius.circular(10),
                     topRight: Radius.circular(80)
-                  )
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      offset: Offset(5,10),
+                      blurRadius: 10,
+                      color: color.AppColor.gradientSecond.withOpacity(0.2)
+                    )
+                  ]
               ),
             )
           ],
