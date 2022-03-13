@@ -49,23 +49,47 @@ class _HomePageState extends State<HomePage> {
             Row(
               children: [
                 Text(
-                  "Training",
+                  "Your Program",
                   style: TextStyle(
                     fontSize: 20,
                     color: color.AppColor.homePageTitle,
                     fontWeight: FontWeight.w700
                   ),
                 ),
+                Expanded(child: Container()),
                 Text(
                   "Details",
                   style: TextStyle(
                     fontSize: 20,
-                    color: color.AppColor.homePageTitle,
-                    fontWeight: FontWeight.w700
+                    color: color.AppColor.homePageDetail,
                   ),
                 ),
+                SizedBox(width: 5,),
+                Icon(Icons.arrow_forward,
+                size: 20,
+                color:color.AppColor.homePageIcons
+                )
               ],
               
+            ),
+            SizedBox(height: 20,),
+            Container(
+              width: MediaQuery.of(context).size.width,
+              height: 200,
+              decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  color.AppColor.gradientFirst,
+                  color.AppColor.gradientSecond
+                ]
+              ),
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(10),
+                    bottomLeft: Radius.circular(10),
+                    bottomRight: Radius.circular(10),
+                    topRight: Radius.circular(80)
+                  )
+              ),
             )
           ],
         ),
