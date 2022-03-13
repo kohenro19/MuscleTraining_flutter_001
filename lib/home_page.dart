@@ -99,6 +99,17 @@ class _HomePageState extends State<HomePage> {
                     )
                   ]
               ),
+              child: Column(
+                children: [
+                  Text(
+                    "Next workout",
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: color.AppColor.homePageContainerTextSmall
+                    ),
+                  )
+                ]
+              ),
             )
           ],
         ),
