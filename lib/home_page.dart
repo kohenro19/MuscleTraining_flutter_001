@@ -100,7 +100,7 @@ class _HomePageState extends State<HomePage> {
                   ]
               ),
               child: Container(
-                padding: const EdgeInsets.only(left: 20, top: 25,),
+                padding: const EdgeInsets.only(left: 20, top: 25, right: 20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -141,7 +141,8 @@ class _HomePageState extends State<HomePage> {
                               color: color.AppColor.homePageContainerTextSmall
                             )
                         ),
-                      Icon(
+                        Expanded(child: Container()),
+                        Icon(
                         Icons.play_circle_fill,
                         color: Colors.white,
                         size: 60,
