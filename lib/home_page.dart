@@ -111,14 +111,45 @@ class _HomePageState extends State<HomePage> {
                         color: color.AppColor.homePageContainerTextSmall
                        ),
                      ),
-                    
+                    SizedBox(height: 5,),
                     Text(
                         "Legs Toining",
                         style: TextStyle(
-                          fontSize: 16,
+                          fontSize: 25,
                           color: color.AppColor.homePageContainerTextSmall
                         ),
-                      ),
+                    ),
+                    SizedBox(height: 5,),
+                    Text(
+                        "and Glutes Workout",
+                        style: TextStyle(
+                          fontSize: 25,
+                          color: color.AppColor.homePageContainerTextSmall
+                        ),
+                    ),
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.timer,
+                          size: 20,
+                          color: color.AppColor.homePageContainerTextSmall
+                        ),
+                        Text(
+                            "60 min",
+                            style: TextStyle(
+                              fontSize: 14,
+                              color: color.AppColor.homePageContainerTextSmall
+                            )
+                        ),
+                      Icon(
+                        Icons.play_circle_fill,
+                        color: Colors.white,
+                        size: 60,
+                      )
+                      
+                      ],
+                    )
+
                   ]
                 ),
               ),
