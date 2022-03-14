@@ -99,18 +99,30 @@ class _HomePageState extends State<HomePage> {
                     )
                   ]
               ),
-              child: Column(
-                children: [
-                  Text(
-                    "Next workout",
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: color.AppColor.homePageContainerTextSmall
-                    ),
-                  )
-                ]
+              child: Container(
+                padding: const EdgeInsets.only(left: 20, top: 25,),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Next workout",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: color.AppColor.homePageContainerTextSmall
+                       ),
+                     ),
+                    
+                    Text(
+                        "Legs Toining",
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: color.AppColor.homePageContainerTextSmall
+                        ),
+                      ),
+                  ]
+                ),
               ),
-            )
+            ),
           ],
         ),
       ),
