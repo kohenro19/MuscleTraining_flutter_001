@@ -127,30 +127,46 @@ class _HomePageState extends State<HomePage> {
                           color: color.AppColor.homePageContainerTextSmall
                         ),
                     ),
+                    SizedBox(height: 25,),
                     Row(
+                      crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
-                        Icon(
-                          Icons.timer,
-                          size: 20,
-                          color: color.AppColor.homePageContainerTextSmall
-                        ),
-                        Text(
-                            "60 min",
-                            style: TextStyle(
-                              fontSize: 14,
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.timer,
+                              size: 20,
                               color: color.AppColor.homePageContainerTextSmall
+                            ),
+                            Text(
+                                "60 min",
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  color: color.AppColor.homePageContainerTextSmall
+                                )
+                            ),
+                            Expanded(child: Container()),
+                            Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(60),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: color.AppColor.gradientFirst,
+                                    blurRadius: 10,
+                                    offset: Offset(4, 8)
+                                  )
+                                ]
+                              ),
+                              child: Icon(
+                                Icons.play_circle_fill,
+                                color: Colors.white,
+                                size: 60,
+                              )
                             )
-                        ),
-                        Expanded(child: Container()),
-                        Icon(
-                        Icons.play_circle_fill,
-                        color: Colors.white,
-                        size: 60,
-                      )
-                      
+                          ],
+                        )
                       ],
                     )
-
                   ]
                 ),
               ),
