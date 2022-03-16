@@ -127,34 +127,40 @@ class _HomePageState extends State<HomePage> {
                           color: color.AppColor.homePageContainerTextSmall
                         ),
                     ),
-                    Row(
-                      children: [
-                        Icon(
-                          Icons.timer,
-                          size: 20,
-                          color: color.AppColor.homePageContainerTextSmall
-                        ),
-                        Text(
-                            "60 min",
-                            style: TextStyle(
-                              fontSize: 14,
+                    SizedBox(height: 25),
+                    // Row(
+                    //   // crossAxisAlignment: CrossAxisAlignment.end,
+                    //   children: [
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.timer,
+                              size: 20,
                               color: color.AppColor.homePageContainerTextSmall
+                            ),
+                            Text(
+                                "60 min",
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  color: color.AppColor.homePageContainerTextSmall
+                                )
+                            ),
+                            Expanded(child: Container()),
+                            Container(
+                              child: Icon(
+                              Icons.play_circle_fill,
+                              color: Colors.white,
+                              size: 60,
+                              )
                             )
-                        ),
-                        Expanded(child: Container()),
-                      Icon(
-                        Icons.play_circle_fill,
-                        color: Colors.white,
-                        size: 60,
-                      )
-                      
+                          ],
+                        )
                       ],
                     )
-
-                  ]
+                  // ]
                 ),
               ),
-            ),
+            // ),
           ],
         ),
       ),
